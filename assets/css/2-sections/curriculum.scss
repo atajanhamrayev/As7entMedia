@@ -1,0 +1,60 @@
+.curriculum{
+    padding: 60px 0;
+
+    &__inner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 48px;
+
+        h2{
+            text-align: center;
+        }
+
+        &-group{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            row-gap: 20px;
+        }
+    }
+
+    &-box{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        width: calc(20% - 12px);
+        padding: 8px 16px;
+        background-color: $white-2;
+        gap: 15px;
+        height: 158px;
+
+        border: 1px solid $black;
+
+        h6{
+            letter-spacing: -.64px;
+        }
+    }
+}
+
+//max-width: 768px
+@mixin curriculum-md{
+    .curriculum{
+        padding: 30px 0;
+
+        &__inner{
+            gap: 25px;
+        }
+
+        &__inner-group{
+            column-gap: 8px;
+            justify-content: space-around;
+        }
+
+        &-box{
+            min-width: 130px;
+            padding: 6px 13px;
+        }
+    }
+}

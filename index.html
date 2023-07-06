@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <script defer src="./assets/js/script.js"></script>
+    <title>As7entMedia</title>
+</head>
+<body>
+    <div class="main">
+        <!-- #header -->
+        <header class="header">
+            <div class="autoContainer">
+                <div class="header__inner">
+                    <div class="logo">
+                        <img src="./assets/images/logo.png" alt="logo">
+                    </div>
+                    <div class="header__inner-group nav">
+                                <a class="nav-link" href="#">Home</a>
+                                <a class="nav-link" href="#">Shop</a>
+                                <a class="nav-link" href="#">Contact</a>
+                    </div>
+                    <div class="header__inner-group ">
+                                    <a href="#">
+                                        <img src="./assets/images/icon/Magnifer.svg" alt="search_icon">
+                                    </a>
+                                    <div class="blockCart">
+                                        <span>Cart</span>
+                                        <div class="cart cart--border">01</div>
+                                    </div>
+                                    <a href="#" class="button button--secondary">Login</a>
+                    </div>
+
+                    <button class="burger" id="menuBtn"></button>
+                </div>
+            </div>
+        </header>
+        <!-- #header-end -->
+
+        <!-- hero -->
+        <section class="hero">
+            <div class="autoContainer">
+                <div class="hero__inner">
+                    <div class="hero__inner-content">
+                        <strong>"Start your Music Business journey here!"</strong>
+                        <h1>Music business for independent music artists <span>online course</span></h1>
+                        <a href="" class="button button--primary">enrol now</a>
+                    </div>
+                    <div class="hero__inner-banner">
+                        <img src="./assets/images/hero-banner.png" alt="hero Banner">
+                    </div>
+
+                    <div class="hero__footer">
+                        <div class="autoContainer">
+                            <div class="hero__footer-inner">
+                            <div class="badge">
+                                <svg width="140" height="140" viewBox="0 0 140 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M70 18.9584C72.4163 18.9584 74.375 20.9171 74.375 23.3334L74.375 116.667C74.375 119.083 72.4163 121.042 70 121.042C67.5838 121.042 65.625 119.083 65.625 116.667L65.625 23.3334C65.625 20.9171 67.5838 18.9584 70 18.9584ZM46.6667 36.4584C49.0829 36.4584 51.0417 38.4171 51.0417 40.8334V99.1667C51.0417 101.583 49.0829 103.542 46.6667 103.542C44.2504 103.542 42.2917 101.583 42.2917 99.1667V40.8334C42.2917 38.4171 44.2504 36.4584 46.6667 36.4584ZM93.3333 36.4584C95.7496 36.4584 97.7083 38.4171 97.7083 40.8334V99.1667C97.7083 101.583 95.7496 103.542 93.3333 103.542C90.9171 103.542 88.9583 101.583 88.9583 99.1667V40.8334C88.9583 38.4171 90.9171 36.4584 93.3333 36.4584ZM23.3333 59.7917C25.7496 59.7917 27.7083 61.7505 27.7083 64.1667L27.7083 75.8334C27.7083 78.2496 25.7496 80.2084 23.3333 80.2084C20.9171 80.2084 18.9583 78.2496 18.9583 75.8334L18.9583 64.1667C18.9583 61.7505 20.9171 59.7917 23.3333 59.7917ZM116.667 59.7917C119.083 59.7917 121.042 61.7505 121.042 64.1667V75.8334C121.042 78.2496 119.083 80.2084 116.667 80.2084C114.25 80.2084 112.292 78.2496 112.292 75.8334V64.1667C112.292 61.7505 114.25 59.7917 116.667 59.7917Z" fill="black"/>
+                                </svg>
+                            </div>
+                            <div class="badge">
+                                <svg width="140" height="140" viewBox="0 0 140 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M70 18.9584C72.4163 18.9584 74.375 20.9171 74.375 23.3334L74.375 116.667C74.375 119.083 72.4163 121.042 70 121.042C67.5838 121.042 65.625 119.083 65.625 116.667L65.625 23.3334C65.625 20.9171 67.5838 18.9584 70 18.9584ZM46.6667 36.4584C49.0829 36.4584 51.0417 38.4171 51.0417 40.8334V99.1667C51.0417 101.583 49.0829 103.542 46.6667 103.542C44.2504 103.542 42.2917 101.583 42.2917 99.1667V40.8334C42.2917 38.4171 44.2504 36.4584 46.6667 36.4584ZM93.3333 36.4584C95.7496 36.4584 97.7083 38.4171 97.7083 40.8334V99.1667C97.7083 101.583 95.7496 103.542 93.3333 103.542C90.9171 103.542 88.9583 101.583 88.9583 99.1667V40.8334C88.9583 38.4171 90.9171 36.4584 93.3333 36.4584ZM23.3333 59.7917C25.7496 59.7917 27.7083 61.7505 27.7083 64.1667L27.7083 75.8334C27.7083 78.2496 25.7496 80.2084 23.3333 80.2084C20.9171 80.2084 18.9583 78.2496 18.9583 75.8334L18.9583 64.1667C18.9583 61.7505 20.9171 59.7917 23.3333 59.7917ZM116.667 59.7917C119.083 59.7917 121.042 61.7505 121.042 64.1667V75.8334C121.042 78.2496 119.083 80.2084 116.667 80.2084C114.25 80.2084 112.292 78.2496 112.292 75.8334V64.1667C112.292 61.7505 114.25 59.7917 116.667 59.7917Z" fill="black"/>
+                                </svg>
+                            </div>
+                            <div class="badge">
+                                <svg width="140" height="140" viewBox="0 0 140 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M70 18.9584C72.4163 18.9584 74.375 20.9171 74.375 23.3334L74.375 116.667C74.375 119.083 72.4163 121.042 70 121.042C67.5838 121.042 65.625 119.083 65.625 116.667L65.625 23.3334C65.625 20.9171 67.5838 18.9584 70 18.9584ZM46.6667 36.4584C49.0829 36.4584 51.0417 38.4171 51.0417 40.8334V99.1667C51.0417 101.583 49.0829 103.542 46.6667 103.542C44.2504 103.542 42.2917 101.583 42.2917 99.1667V40.8334C42.2917 38.4171 44.2504 36.4584 46.6667 36.4584ZM93.3333 36.4584C95.7496 36.4584 97.7083 38.4171 97.7083 40.8334V99.1667C97.7083 101.583 95.7496 103.542 93.3333 103.542C90.9171 103.542 88.9583 101.583 88.9583 99.1667V40.8334C88.9583 38.4171 90.9171 36.4584 93.3333 36.4584ZM23.3333 59.7917C25.7496 59.7917 27.7083 61.7505 27.7083 64.1667L27.7083 75.8334C27.7083 78.2496 25.7496 80.2084 23.3333 80.2084C20.9171 80.2084 18.9583 78.2496 18.9583 75.8334L18.9583 64.1667C18.9583 61.7505 20.9171 59.7917 23.3333 59.7917ZM116.667 59.7917C119.083 59.7917 121.042 61.7505 121.042 64.1667V75.8334C121.042 78.2496 119.083 80.2084 116.667 80.2084C114.25 80.2084 112.292 78.2496 112.292 75.8334V64.1667C112.292 61.7505 114.25 59.7917 116.667 59.7917Z" fill="black"/>
+                                </svg>
+                            </div>
+                            <div class="badge">
+                                <svg width="140" height="140" viewBox="0 0 140 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M70 18.9584C72.4163 18.9584 74.375 20.9171 74.375 23.3334L74.375 116.667C74.375 119.083 72.4163 121.042 70 121.042C67.5838 121.042 65.625 119.083 65.625 116.667L65.625 23.3334C65.625 20.9171 67.5838 18.9584 70 18.9584ZM46.6667 36.4584C49.0829 36.4584 51.0417 38.4171 51.0417 40.8334V99.1667C51.0417 101.583 49.0829 103.542 46.6667 103.542C44.2504 103.542 42.2917 101.583 42.2917 99.1667V40.8334C42.2917 38.4171 44.2504 36.4584 46.6667 36.4584ZM93.3333 36.4584C95.7496 36.4584 97.7083 38.4171 97.7083 40.8334V99.1667C97.7083 101.583 95.7496 103.542 93.3333 103.542C90.9171 103.542 88.9583 101.583 88.9583 99.1667V40.8334C88.9583 38.4171 90.9171 36.4584 93.3333 36.4584ZM23.3333 59.7917C25.7496 59.7917 27.7083 61.7505 27.7083 64.1667L27.7083 75.8334C27.7083 78.2496 25.7496 80.2084 23.3333 80.2084C20.9171 80.2084 18.9583 78.2496 18.9583 75.8334L18.9583 64.1667C18.9583 61.7505 20.9171 59.7917 23.3333 59.7917ZM116.667 59.7917C119.083 59.7917 121.042 61.7505 121.042 64.1667V75.8334C121.042 78.2496 119.083 80.2084 116.667 80.2084C114.25 80.2084 112.292 78.2496 112.292 75.8334V64.1667C112.292 61.7505 114.25 59.7917 116.667 59.7917Z" fill="black"/>
+                                </svg>
+                            </div>
+                            <div class="badge">
+                                <svg width="140" height="140" viewBox="0 0 140 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M70 18.9584C72.4163 18.9584 74.375 20.9171 74.375 23.3334L74.375 116.667C74.375 119.083 72.4163 121.042 70 121.042C67.5838 121.042 65.625 119.083 65.625 116.667L65.625 23.3334C65.625 20.9171 67.5838 18.9584 70 18.9584ZM46.6667 36.4584C49.0829 36.4584 51.0417 38.4171 51.0417 40.8334V99.1667C51.0417 101.583 49.0829 103.542 46.6667 103.542C44.2504 103.542 42.2917 101.583 42.2917 99.1667V40.8334C42.2917 38.4171 44.2504 36.4584 46.6667 36.4584ZM93.3333 36.4584C95.7496 36.4584 97.7083 38.4171 97.7083 40.8334V99.1667C97.7083 101.583 95.7496 103.542 93.3333 103.542C90.9171 103.542 88.9583 101.583 88.9583 99.1667V40.8334C88.9583 38.4171 90.9171 36.4584 93.3333 36.4584ZM23.3333 59.7917C25.7496 59.7917 27.7083 61.7505 27.7083 64.1667L27.7083 75.8334C27.7083 78.2496 25.7496 80.2084 23.3333 80.2084C20.9171 80.2084 18.9583 78.2496 18.9583 75.8334L18.9583 64.1667C18.9583 61.7505 20.9171 59.7917 23.3333 59.7917ZM116.667 59.7917C119.083 59.7917 121.042 61.7505 121.042 64.1667V75.8334C121.042 78.2496 119.083 80.2084 116.667 80.2084C114.25 80.2084 112.292 78.2496 112.292 75.8334V64.1667C112.292 61.7505 114.25 59.7917 116.667 59.7917Z" fill="black"/>
+                                </svg>
+                            </div>
+                            <div class="badge">
+                                <svg width="140" height="140" viewBox="0 0 140 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M70 18.9584C72.4163 18.9584 74.375 20.9171 74.375 23.3334L74.375 116.667C74.375 119.083 72.4163 121.042 70 121.042C67.5838 121.042 65.625 119.083 65.625 116.667L65.625 23.3334C65.625 20.9171 67.5838 18.9584 70 18.9584ZM46.6667 36.4584C49.0829 36.4584 51.0417 38.4171 51.0417 40.8334V99.1667C51.0417 101.583 49.0829 103.542 46.6667 103.542C44.2504 103.542 42.2917 101.583 42.2917 99.1667V40.8334C42.2917 38.4171 44.2504 36.4584 46.6667 36.4584ZM93.3333 36.4584C95.7496 36.4584 97.7083 38.4171 97.7083 40.8334V99.1667C97.7083 101.583 95.7496 103.542 93.3333 103.542C90.9171 103.542 88.9583 101.583 88.9583 99.1667V40.8334C88.9583 38.4171 90.9171 36.4584 93.3333 36.4584ZM23.3333 59.7917C25.7496 59.7917 27.7083 61.7505 27.7083 64.1667L27.7083 75.8334C27.7083 78.2496 25.7496 80.2084 23.3333 80.2084C20.9171 80.2084 18.9583 78.2496 18.9583 75.8334L18.9583 64.1667C18.9583 61.7505 20.9171 59.7917 23.3333 59.7917ZM116.667 59.7917C119.083 59.7917 121.042 61.7505 121.042 64.1667V75.8334C121.042 78.2496 119.083 80.2084 116.667 80.2084C114.25 80.2084 112.292 78.2496 112.292 75.8334V64.1667C112.292 61.7505 114.25 59.7917 116.667 59.7917Z" fill="black"/>
+                                </svg>
+                            </div>
+                            <div class="badge">
+                                <svg width="140" height="140" viewBox="0 0 140 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M70 18.9584C72.4163 18.9584 74.375 20.9171 74.375 23.3334L74.375 116.667C74.375 119.083 72.4163 121.042 70 121.042C67.5838 121.042 65.625 119.083 65.625 116.667L65.625 23.3334C65.625 20.9171 67.5838 18.9584 70 18.9584ZM46.6667 36.4584C49.0829 36.4584 51.0417 38.4171 51.0417 40.8334V99.1667C51.0417 101.583 49.0829 103.542 46.6667 103.542C44.2504 103.542 42.2917 101.583 42.2917 99.1667V40.8334C42.2917 38.4171 44.2504 36.4584 46.6667 36.4584ZM93.3333 36.4584C95.7496 36.4584 97.7083 38.4171 97.7083 40.8334V99.1667C97.7083 101.583 95.7496 103.542 93.3333 103.542C90.9171 103.542 88.9583 101.583 88.9583 99.1667V40.8334C88.9583 38.4171 90.9171 36.4584 93.3333 36.4584ZM23.3333 59.7917C25.7496 59.7917 27.7083 61.7505 27.7083 64.1667L27.7083 75.8334C27.7083 78.2496 25.7496 80.2084 23.3333 80.2084C20.9171 80.2084 18.9583 78.2496 18.9583 75.8334L18.9583 64.1667C18.9583 61.7505 20.9171 59.7917 23.3333 59.7917ZM116.667 59.7917C119.083 59.7917 121.042 61.7505 121.042 64.1667V75.8334C121.042 78.2496 119.083 80.2084 116.667 80.2084C114.25 80.2084 112.292 78.2496 112.292 75.8334V64.1667C112.292 61.7505 114.25 59.7917 116.667 59.7917Z" fill="black"/>
+                                </svg>
+                            </div>
+                            <div class="badge">
+                                <svg width="140" height="140" viewBox="0 0 140 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M70 18.9584C72.4163 18.9584 74.375 20.9171 74.375 23.3334L74.375 116.667C74.375 119.083 72.4163 121.042 70 121.042C67.5838 121.042 65.625 119.083 65.625 116.667L65.625 23.3334C65.625 20.9171 67.5838 18.9584 70 18.9584ZM46.6667 36.4584C49.0829 36.4584 51.0417 38.4171 51.0417 40.8334V99.1667C51.0417 101.583 49.0829 103.542 46.6667 103.542C44.2504 103.542 42.2917 101.583 42.2917 99.1667V40.8334C42.2917 38.4171 44.2504 36.4584 46.6667 36.4584ZM93.3333 36.4584C95.7496 36.4584 97.7083 38.4171 97.7083 40.8334V99.1667C97.7083 101.583 95.7496 103.542 93.3333 103.542C90.9171 103.542 88.9583 101.583 88.9583 99.1667V40.8334C88.9583 38.4171 90.9171 36.4584 93.3333 36.4584ZM23.3333 59.7917C25.7496 59.7917 27.7083 61.7505 27.7083 64.1667L27.7083 75.8334C27.7083 78.2496 25.7496 80.2084 23.3333 80.2084C20.9171 80.2084 18.9583 78.2496 18.9583 75.8334L18.9583 64.1667C18.9583 61.7505 20.9171 59.7917 23.3333 59.7917ZM116.667 59.7917C119.083 59.7917 121.042 61.7505 121.042 64.1667V75.8334C121.042 78.2496 119.083 80.2084 116.667 80.2084C114.25 80.2084 112.292 78.2496 112.292 75.8334V64.1667C112.292 61.7505 114.25 59.7917 116.667 59.7917Z" fill="black"/>
+                                </svg>
+                            </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- hero-end -->
+
+        <!-- course-for -->
+        <section class="course-for">
+            <div class="autoContainer">
+                <div class="course-for__inner">
+                    <div class="course-for__inner-banner">
+                        <img src="./assets/images/course-for-banner.png" alt="course-for banner">
+                    </div>
+                    <div class="course-for__inner-content">
+                        <h2>Who is this course for?</h2>
+                        <p>This course is for anyone who is interested in the music industry. 
+                            Whether you are an independent artist looking for guidance, a music
+                             enthusiast, someone looking to see if they like the music industry
+                              before embarking on a degree course, or someone looking to gain a 
+                              comprehensive understanding of the music industry and business, 
+                              this course is for you. You will also have the confidence to take 
+                              your career to the next level. 
+                        </p>
+
+                        <a href="" class="button button--primary">enrol now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- curriculum -->
+        <section class="curriculum">
+            <div class="autoContainer">
+                <div class="curriculum__inner">
+                    <h2>Course curriculum</h2>
+                    <div class="curriculum__inner-group">
+                        <div class="curriculum-box">
+                            <span class="cart cart--md">1</span>
+                            <h6 class="_sm">Introduction</h6>
+                        </div>
+                        <div class="curriculum-box">
+                            <div class="cart cart--md">2</div>
+                            <h6 class="_sm">Overview of the Music Industry</h6>
+                        </div>
+                        <div class="curriculum-box">
+                            <div class="cart cart--md">3</div>
+                            <h6 class="_sm">The Artist - The Me Business</h6>
+                        </div>
+                        <div class="curriculum-box">
+                            <div class="cart cart--md">4</div>
+                            <h6 class="_sm"> The Importance of Training /Perfectingyour craft</h6>
+                        </div>
+                        <div class="curriculum-box">
+                            <div class="cart cart--md">5</div>
+                            <h6 class="_sm">Publishing 101</h6>
+                        </div>
+                        <div class="curriculum-box">
+                            <div class="cart cart--md">6</div>
+                            <h6 class="_sm">Recording</h6>
+                        </div>
+                        <div class="curriculum-box">
+                            <div class="cart cart--md">7</div>
+                            <h6 class="_sm">Assemble Your Team</h6>
+                        </div>
+                        <div class="curriculum-box">
+                            <div class="cart cart--md">8</div>
+                            <h6 class="_sm">Music Distribution</h6>
+                        </div>
+                        <div class="curriculum-box">
+                            <div class="cart cart--md">9</div>
+                            <h6 class="_sm">Release Plan & Budget</h6>
+                        </div>
+                        <div class="curriculum-box">
+                            <div class="cart cart--md">10</div>
+                            <h6 class="_sm">Final Exam</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- curriculum - end -->
+
+        <!-- gain -->
+        <section class="gain">
+            <div class="autoContainer">
+                <div class="gain__inner">
+                    <h2>What will you gain?</h2>
+                    <div class="gain__inner-group">
+                        <div class="gain-box">
+                            <span class="cart">1</span>
+                            <p>
+                                Our course provides independent artists with the knowledge and confidence to build 
+                                their careers by giving them a comprehensive understanding of the music industry.
+                            </p>
+                        </div>
+                        <div class="gain-box">
+                            <div class="cart">2</div>
+                            <p>
+                                Learn from music industry experts. Our instructors are all experienced professionals 
+                                in the music industry. They will share their knowledge and expertise with you, giving
+                                 you the inside track on how to succeed.
+                            </p>
+                        </div>
+                        <div class="gain-box">
+                            <div class="cart">3</div>
+                            <p>
+                                Study at your own pace in your own time. Our course is self-paced, so you can learn at 
+                                your own speed and on your own schedule. This flexibility makes it easy to fit the course
+                                 into your busy life.
+                            </p>
+                        </div>
+                        <div class="gain-box">
+                            <div class="cart">4</div>
+                            <p>
+                                Stay up-to-date with music industry trends. The music industry is constantly changing, 
+                                so it's important to stay up-to-date on the latest trends. Our course will keep you informed 
+                                of the latest developments in the industry, so you can make informed decisions about your career.
+                            </p>
+                        </div>
+                        <div class="gain-box">
+                            <div class="cart">5</div>
+                            <p>
+                                Gain CPD accreditation. Our course is accredited by the [Accreditation Body Name]. This accreditation 
+                                is widely recognised as a valuable investment in one's professional growth. It's a process that involves
+                                 acquiring new skills, knowledge, and experience to keep pace with the changing demands of one's profession.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- gain-end -->
+
+        <!-- group -->
+        <section class="group">
+            <div class="autoContainer">
+                <div class="group__inner">
+                    <div class="group__inner-subgroup">
+                        <div class="box group__inner-subgroup-box">
+                            <div class="cart">1</div>
+                            <h6>Course Assessment</h6>
+                            <p>
+                                You will immediately be given access to a specifically crafted end of module 
+                                test upon completing an online module. For each test, the pass mark will be set to 80%.
+                            </p>
+                        </div>
+                        <div class="box group__inner-subgroup-box">
+                            <div class="cart">2</div>
+                            <h6>Accredited Certificate - Awarding Body</h6>
+                            <p>
+                                After successfully completing this Quality Management - CPD Accredited course, 
+                                you will qualify for the CPD Certification Service (CPD UK) certified certificate
+                                from As7ent Media.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="box group__inner-box">
+                        <div class="cart">3</div>
+                        <h6>Why Choose The CPD Certification Service Accredited Course?</h6>
+                        <p>
+                            Hundreds and thousands of professionals recognise the CPD Certified symbol as the 
+                            qualitative benchmark that reflects and sets the industry standards. CPD UK evaluates 
+                            learning activities to the highest standards and courses are certified against the 
+                            universally accepted structured checklist.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- group-end -->
+
+        <!-- about -->
+        <section class="about">
+            <div class="autoContainer">
+                <div class="about__inner">
+                    <div class="about__inner-content">
+                        <h2>About us</h2>
+                        <p>
+                            We are a collective of individuals with extensive knowledge about the music 
+                            industry in all different areas. With over 20 years of experience, we now look 
+                            to share our knowledge to the next generation with insights, tips, and tricks 
+                            to help you navigate through the music industry. We have worked with some of 
+                            the biggest names in the industry, and we know what it takes to make it in this
+                             business.
+                            <br>
+                            <br>
+                            If you are looking for help navigating the music industry, sign up for our course
+                            today.
+                        </p>
+                        <a href="" class="button button--primary">
+                            Follow 
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.00002 17.3334C13.6024 17.3334 17.3334 13.6025 17.3334 9.00008C17.3334 4.39771 13.6024 0.666748 9.00002 0.666748C4.39765 0.666748 0.666687 4.39771 0.666687 9.00008C0.666687 13.6025 4.39765 17.3334 9.00002 17.3334ZM9.62502 6.50008C9.62502 6.1549 9.3452 5.87508 9.00002 5.87508C8.65484 5.87508 8.37502 6.1549 8.37502 6.50008L8.37502 8.3751H6.50002C6.15484 8.3751 5.87502 8.65492 5.87502 9.0001C5.87502 9.34528 6.15484 9.6251 6.50002 9.6251H8.37502V11.5001C8.37502 11.8453 8.65484 12.1251 9.00002 12.1251C9.3452 12.1251 9.62502 11.8453 9.62502 11.5001L9.62502 9.6251H11.5C11.8452 9.6251 12.125 9.34528 12.125 9.0001C12.125 8.65492 11.8452 8.3751 11.5 8.3751H9.62502V6.50008Z" fill="white"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="about__inner-banner">
+                        <img src="./assets/images/about-banner.png" alt="about-banner">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- about-end -->
+
+        <!-- question -->
+        <section class="question">
+            <div class="autoContainer">
+                <div class="question__inner">
+                    <h2>Frequently Asked Questions</h2>
+                    <div class="question__inner-group">
+                        <div class="question-box">
+                            <div class="question-box-row">
+                                <div class="question-box-title">
+                                    <div class="cart">1</div>
+                                    <h6>What are the requirements for this course?</h6>
+                                </div>
+                                <button>
+                                    <svg  class="minus active" width="20" height="2" viewBox="0 0 20 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="20" height="2" rx="1" fill="black"/>
+                                    </svg>
+
+                                    <svg class="plus passive" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect y="9" width="20" height="2" rx="1" fill="black"/>
+                                        <rect x="9" width="2" height="20" rx="1" fill="black"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <p class="changer active">
+                                You do not need any previous knowledge or skills to enrol onto this course.
+                                 You may need to conduct your own further reading.
+                            </p>
+                        </div>
+                        <div class="question-box">
+                            <div class="question-box-row">
+                                <div class="question-box-title">
+                                    <div class="cart">2</div>
+                                    <h6>What are the requirements for this course?</h6>
+                                </div>
+                                    <svg class="minus" width="20" height="2" viewBox="0 0 20 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="20" height="2" rx="1" fill="black"/>
+                                    </svg>
+                                    <svg class="plus active" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect y="9" width="20" height="2" rx="1" fill="black"/>
+                                        <rect x="9" width="2" height="20" rx="1" fill="black"/>
+                                    </svg>
+                                
+                            </div>
+                            <p>
+                                You do not need any previous knowledge or skills to enrol onto this course.
+                                 You may need to conduct your own further reading.
+                            </p>
+                        </div>
+                        <div class="question-box">
+                            <div class="question-box-row">
+                                <div class="question-box-title">
+                                    <div class="cart">3</div>
+                                    <h6>What are the requirements for this course?</h6>
+                                </div>
+                                    <svg onclick="currentDiv(2)" class="minus passive" width="20" height="2" viewBox="0 0 20 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="20" height="2" rx="1" fill="black"/>
+                                    </svg>
+                                    <svg class="plus active" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect y="9" width="20" height="2" rx="1" fill="black"/>
+                                        <rect x="9" width="2" height="20" rx="1" fill="black"/>
+                                    </svg>
+                            </div>
+                            <p>
+                                You do not need any previous knowledge or skills to enrol onto this course.
+                                 You may need to conduct your own further reading.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- question-end -->
+
+
+        <!-- footer -->
+        <footer class="footer">
+            <div class="autoContainer">
+                <div class="footer__inner">
+                    <div class="footer__inner-column">
+                        <div class="logo">
+                            <img src="./assets/images/logo.png" alt="logo">
+                        </div>
+                        <p>
+                            We are a collective of individuals with extensive knowledge 
+                            about the music industry in all different areas. With over 20 years of experience,
+                        </p>
+                    </div>
+                    <div class="footer__inner-row">
+                        <a class="button button--icon" href="#">
+                            <img class="icon" src="./assets/images/icon/facebook_icon.svg" alt="">
+                        </a>
+                        <a class="button button--icon" href="#">
+                            <img class="icon" src="./assets/images/icon/twitter_icon.svg" alt="">
+                        </a>
+                        <a class="button button--icon" href="#">
+                            <img class="icon" src="./assets/images/icon/instagram_icon.svg" alt="">
+                        </a>
+                        <a class="button button--icon" href="#">
+                            <img class="icon" src="./assets/images/icon/linkedin_icon.svg" alt="">
+                        </a>
+                        <a class="button button--icon" href="#">
+                            <img class="icon" src="./assets/images/icon/tiktok_icon.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__copyright">
+                    <p class="_sm">
+                        All content copyright 2023 As7ent Media Limited
+                    </p>
+                    <div class="footer__copyright-group">
+                        <a href="#">Terms</a>
+                        <a href="#">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer-end -->
+
+    </div>
+</body>
+</html>

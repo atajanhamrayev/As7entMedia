@@ -1,0 +1,48 @@
+//max-width: 1025px
+@media (max-width: 1025px) {
+    @include nulifier--xl;
+    @include components-xl;
+};
+
+//max-width: 940px
+@media (max-width: 940px) {
+    @include nulifier--lg;
+    @include components-lg;
+    @include hero-lg;
+    @include course-for-lg;
+    @include gain-lg;
+    @include group-lg;
+    @include about-lg;
+    @include question-lg;
+};
+
+//max-width: 768px
+@media (max-width: 768px) {
+    @include nulifier--md;
+    @include typography-md;
+    @include header-md;
+    @include components-md;
+    @include curriculum-md;
+    @include gain-md;
+    @include group-md;
+    @include question-md;
+    @include footer-md;
+};
+
+//max-width: 660px
+@media (max-width: 660px) {
+    @include nulifier--xmd;
+};
+
+//max-width: 560px
+@media (max-width: 560px) {
+    @include nulifier--sm;
+    @include gain-sm;
+    @include question-sm;
+    @include footer-sm;
+};
+
+//max-width: 460px
+@media (max-width: 460px) {
+    @include nulifier--xsm;
+};

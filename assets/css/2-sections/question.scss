@@ -1,0 +1,141 @@
+.question {
+    padding: 100px 0;
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+
+        h2 {
+            text-align: center;
+        }
+
+        &-group {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+        }
+    }
+
+    &-box {
+        background-color: $white-2;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+
+        &-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        &-title {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+
+            h6 {
+                width: calc(100% - 30px);
+            }
+        }
+
+        p {
+            display: none;
+        }
+
+        svg {
+            display: none;
+        }
+
+        .active {
+            display: block;
+            text-align: left;
+        }
+
+        .passive {
+            display: none;
+        }
+    }
+}
+
+//max-width: 940px
+@mixin question-lg {
+    .question{
+        padding: 60px 0;
+
+        &__inner {
+            gap: 30px;
+
+            &-group {
+                gap: 20px;
+            }
+        }
+
+        &-box {
+            padding: 25px;
+            gap: 15px;
+
+            &-row {
+                gap: 15px;
+            }
+
+            &-title {
+                gap: 15px;
+            }
+        }
+    }
+}
+
+//max-width: 768px
+@mixin question-md {
+    .question {
+        padding: 30px 0;
+        &__inner {
+            gap: 20px;
+
+            &-group {
+                gap: 10px;
+            }
+        }
+
+        &-box {
+            padding: 20px;
+            gap: 10px;
+        }
+    }
+}
+
+//max-width: 560px
+@mixin question-sm {
+    .question {
+        &__inner {
+            gap: 10px;
+
+            &-group {
+                gap: 10px;
+            }
+        }
+
+        &-box {
+            padding: 10px;
+            gap: 5px;
+
+            &-row {
+                gap: 10px;
+            }
+
+            &-title {
+                gap: 10px;
+            }
+        }
+    }
+}

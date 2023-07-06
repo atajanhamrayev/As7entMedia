@@ -1,0 +1,18 @@
+@import "./0-main/animations.scss";
+@import "./0-main/typography.scss";
+@import "./0-main/variables.scss";
+@import "./0-main/nulifier.scss";
+
+@import "./1-components/components.scss";
+@import "./1-components/header.scss";
+@import "./1-components/footer.scss";
+
+@import "./2-sections/hero.scss";
+@import "./2-sections/course-for.scss";
+@import "./2-sections/curriculum.scss";
+@import "./2-sections/gain.scss";
+@import "./2-sections/group.scss";
+@import "./2-sections/about.scss";
+@import "./2-sections/question.scss";
+
+@import "./1-components/responsive.scss";

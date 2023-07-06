@@ -1,0 +1,93 @@
+.gain{
+    padding: 60px 0;
+
+    &__inner{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+        
+        h2{
+            text-align: center;
+        }
+
+        &-group{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 100%;
+            color: $white;
+        }
+    }
+
+    &-box{
+        padding: 40px;
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+        background-color: $black;
+        
+
+        p{
+            width: calc(100% - 60px);
+            max-width: 1010px;
+        }
+    }
+}
+
+//max-width: 940px
+@mixin gain-lg{
+    .gain{
+        padding: 30px 0;
+
+        &__inner{
+            gap: 30px;
+
+            &-group{
+                gap: 15px;
+            }
+        }
+
+        &-box{
+            padding: 30px;
+            gap: 15px;
+        }
+    }
+}
+
+//max-width: 768px
+@mixin gain-md{
+    .gain{
+        &__inner{
+            gap: 20px;
+
+            &-group{
+                gap: 10px;
+            }
+        }
+
+        &-box{
+            padding: 20px;
+            gap: 10px;
+        }
+    }
+}
+
+//max-width: 560px
+@mixin gain-sm{
+    .gain{
+        &__inner{
+            gap: 10px;
+
+            &-group{
+                gap: 10px;
+            }
+        }
+
+        &-box{
+            padding: 10px;
+            gap: 5px;
+        }
+    }
+}
