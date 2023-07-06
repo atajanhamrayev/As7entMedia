@@ -4312,7 +4312,6 @@ img, svg {
   width: 100%;
 }
 .hero__inner-content {
-  width: calc(60% - 100px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4321,6 +4320,7 @@ img, svg {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 20px;
+  max-width: 600px;
 }
 .hero__inner-content h1 {
   letter-spacing: -2.4px;
@@ -4355,7 +4355,7 @@ img, svg {
   background-color: #FE3232;
   width: 100%;
   left: 0;
-  bottom: -41.74px;
+  top: calc(100% - 6vw);
 }
 .hero__footer-inner {
   display: -webkit-box;
@@ -4460,12 +4460,14 @@ img, svg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   row-gap: 20px;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
 }
 .curriculum-box {
   display: -webkit-box;
@@ -4483,9 +4485,11 @@ img, svg {
   background-color: #f1f1f1;
   gap: 15px;
   height: 158px;
+  min-width: 200px;
   border: 1px solid #000;
 }
 .curriculum-box h6 {
+  font-size: 16px !important;
   letter-spacing: -0.64px;
 }
 
@@ -4550,27 +4554,11 @@ img, svg {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 30px;
 }
-.group__inner-subgroup {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.group__inner-subgroup-box {
+.group__inner-box {
   width: calc(50% - 15px);
 }
 .group__inner .box {
@@ -4586,12 +4574,12 @@ img, svg {
           flex-direction: column;
   gap: 10px;
 }
-.group__inner-box {
-  width: 100%;
-}
-.group__inner-box h6 {
+.group__inner .box h6 {
   margin-top: 10px;
   letter-spacing: -0.8px;
+}
+.group__inner .third {
+  width: 100%;
 }
 
 .about {
@@ -4892,7 +4880,6 @@ img, svg {
         justify-content: space-around;
   }
   .curriculum-box {
-    min-width: 130px;
     padding: 6px 13px;
   }
   .gain__inner {

@@ -12,10 +12,10 @@
         
 
         &-content{
-            width: calc(60% - 100px);
             display: flex;
             flex-direction: column;
             gap: 20px;
+            max-width: 600px;
 
 
             h1{
@@ -58,7 +58,8 @@
         background-color: $red;
         width: 100%;
         left: 0;
-        bottom: -41.74px;
+        //bottom: -41.74px;
+        top: calc(100% - 6vw);
 
         &-inner{
             display: flex;
@@ -79,6 +80,8 @@
         }
     }
 }
+
+
 
 //max-width: 940px
 @mixin hero-lg{

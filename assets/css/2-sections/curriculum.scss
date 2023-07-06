@@ -14,9 +14,10 @@
         &-group{
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            justify-content: space-around;
             flex-wrap: wrap;
             row-gap: 20px;
+            column-gap: 10px;
         }
     }
 
@@ -29,10 +30,11 @@
         background-color: $white-2;
         gap: 15px;
         height: 158px;
-
+        min-width: 200px;
         border: 1px solid $black;
 
         h6{
+            font-size: 16px !important;
             letter-spacing: -.64px;
         }
     }
@@ -53,7 +55,6 @@
         }
 
         &-box{
-            min-width: 130px;
             padding: 6px 13px;
         }
     }
